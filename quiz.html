@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CosmoExplorer</title>
+        
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="quiz.css">
+    
+    </head>
+    
+    <body>
+        
+        <!-- ================= NAVBAR ================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Imagenes/img-logo.png" height="45">
+                    <div class="logo-texto">
+                        <h1>COSMOEXPLORER</h1>
+                        <span>Explorá el Universo.</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav gap-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">PLANETAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ASTRONAUTAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">QUIZ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">MISIONES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="d-flex gap-2">
+                    <span class="circulo"></span>
+                    <span class="circulo"></span>
+                    <span class="circulo"></span>
+                    <span class="circulo"></span>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- ================= Quiz ================= -->
+        <section class="quiz" id="quiz">
+            <div class="quiz-contenido">
+                <div class="quiz-pregunta">
+                    <h1 id="pregunta"></h1>
+                    <div class="respuestas">
+                        <button class="respuesta"></button>
+                        <button class="respuesta"></button>
+                        <button class="respuesta"></button>
+                        <button class="respuesta"></button>
+                    </div>
+                </div>
+  
+                <div class="quiz-imagen">
+                    <div class="circulo-icono">
+                        <img src="Imagenes/cerebro.png" alt="Quiz">
+                    </div>
+                    <button class="btn-siguiente" id="btnSiguiente" disabled>
+                        SIGUIENTE <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--===================== FOOTER =====================-->
+        <footer class="footer">
+            <div class="footer-overlay">
+                <div class="container text-center">
+
+                    <div class="footer-contenido">
+                        <h2>Sobre COSMOEXPLORER</h2>
+                        <p>
+                            Plataforma educativa para explorar el
+                            universo, aprender y maravillarse con el cosmos.
+                        </p>
+                        <div class="footer-dots">
+                            <span></span>
+                            <span></span>               
+                            <span></span>
+                            <span></span>            
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        © CosmoExplorer. Todos los derechos reservados.
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+        const preguntas = [
+            {
+                pregunta: "¿Cuál es el planeta más cercano al Sol?",
+                respuestas: ["Tierra", "Mercurio", "Marte", "Venus"],
+                correcta: 1
+            },
+        
+            {
+                pregunta: "¿Cuál es el planeta más grande del Sistema Solar?",
+                respuestas: ["Saturno", "Júpiter", "Neptuno", "Tierra"], 
+                correcta: 1        
+            },
+
+            {
+                pregunta: "¿Qué planeta es conocido como el planeta rojo?",
+                respuestas: ["Venus", "Marte", "Urano", "Mercurio"],            
+                correcta: 1        
+            },
+
+            {
+                pregunta: "¿Cómo se llama el satélite natural de la Tierra?",
+                respuestas: ["Sol", "Luna", "Europa", "Titán"],
+                correcta: 1
+            }
+        ];
+        let preguntaActual = 0;
+        let puntaje = 0;
+
+        const pregunta = document.getElementById("pregunta");
+  
+        const botones = document.querySelectorAll(".respuesta");
+  
+        const btnSiguiente = document.getElementById("btnSiguiente");
+  
+        const quiz = document.getElementById("quiz");
+
+        function cargarPregunta(){
+            const actual = preguntas[preguntaActual];
+            pregunta.textContent = actual.pregunta;
+            botones.forEach((boton, index) => {
+                boton.textContent = actual.respuestas[index];
+                boton.classList.remove("correcta", "incorrecta");
+                boton.disabled = false;
+            });
+
+            btnSiguiente.disabled = true;
+        }
+  
+        botones.forEach((boton, index) => {
+            boton.addEventListener("click", () => {
+                const correcta = preguntas[preguntaActual].correcta;
+                botones.forEach(btn => btn.disabled = true);
+
+                if(index === correcta){
+                    boton.classList.add("correcta");
+                    puntaje++;
+                }else{
+                    boton.classList.add("incorrecta");
+                    botones[correcta].classList.add("correcta");
+                }
+
+                btnSiguiente.disabled = false;
+
+            });
+        });
+
+        btnSiguiente.addEventListener("click", () => {
+            preguntaActual++;
+
+            if(preguntaActual < preguntas.length){
+                cargarPregunta();
+            }else{
+                quiz.innerHTML = `
+                <div class="resultado">
+                    <h1>¡Terminaste!</h1>
+                    <p>Respondiste bien ${puntaje} de ${preguntas.length} preguntas.</p>
+                    <button onclick="location.reload()">Jugar de nuevo</button>
+                    </div>
+                `;
+            }
+        })
+        cargarPregunta();
+        </script>
+
+      
+
+    </body>
+</html>

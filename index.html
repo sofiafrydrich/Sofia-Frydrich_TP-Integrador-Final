@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CosmoExplorer</title>
+        
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="planetas.css">
+
+    </head>
+    
+    <body>
+        
+        <!-- ================= NAVBAR ================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+
+            <div class="container-fluid px-5">
+
+                <a class="navbar-brand d-flex align-items-center" href="#">
+
+                    <img src="Imagenes/img-logo.png" height="45">
+
+                    <div class="logo-texto">
+                        <h1>COSMOEXPLORER</h1>
+                        <span>Explorá el Universo.</span>
+                    </div>
+
+                </a>  
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav gap-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planetas">PLANETAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#astronautas">ASTRONAUTAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">QUIZ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#misiones">MISIONES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="d-flex gap-2">
+                    <div class="redes">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero-slider" id="heroSlider">
+
+            <button class="hero-flecha hero-prev" id="heroPrev">‹</button>
+
+            <div class="hero-contenido">
+
+                <h1 id="heroTitulo">Bienvenido a casa, Terrícola.</h1>
+    
+                <div id="heroTextoExtra"></div>
+
+                <button class="hero-btn" id="heroBtn"></button>
+                
+                <div class="hero-dots" id="heroDots">
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+  
+            <button class="hero-flecha hero-next" id="heroNext">›</button>
+
+        </section>
+        
+        <!-- ================= PLANETAS ================= -->
+        <section id="planetas" class="hero-planeta">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>TIERRA</h1>
+                            <div class="linea"></div>
+                            <p>Es el tercer planeta del Sistema Solar por su proximidad al Sol. Esta situación y sus especiales características le permiten albergar medios naturales y seres vivos que no se encuentran en ningún sitio del Universo conocido.</p>
+                        </div>
+                        <img src="Imagenes/tierra.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>MARTE</h1>
+                            <div class="linea"></div>
+                            <p>Es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar. Recibió su nombre en homenaje al homónimo dios de la guerra de la mitología romana (Ares en la mitología griega), y también es conocido como "el planeta rojo" debido a la apariencia rojiza que le confiere el óxido de hierro predominante en su superficie.</p>
+                        </div>
+                        <img src="Imagenes/marte.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>VENUS</h1>
+                            <div class="linea"></div>
+                            <p>Es el segundo planeta más cercano al Sol y el objeto más brillante en el cielo nocturno después de la Luna. Es un planeta rocoso, posee un infierno de efecto invernadero descontrolado, con temperaturas de superficie que superan los 460 °C y una presión atmosférica aplastante.</p>
+                        </div>
+                        <img src="Imagenes/venus.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>MERCURIO</h1>
+                            <div class="linea"></div>
+                            <p>Es el planeta más pequeño y cercano al Sol en el sistema solar. Es rocoso y denso con temperaturas extremas que van desde los 430 °C durante el día hasta los -180 °C por la noche. Tarda 88 días en completar una órbita y 59 días en rotar sobre su eje.</p>
+                        </div>
+                        <img src="Imagenes/mercurio.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>SATURNO</h1>
+                            <div class="linea"></div>
+                            <p>Es el sexto planeta del sistema solar y el segundo más grande. Es un gigante gaseoso compuesto principalmente de hidrógeno y helio, famoso por su espectacular sistema de anillos compuestos de hielo y roca. Se encuentra a unos 1.400 millones de kilómetros del Sol y tarda 29,5 años en completar una órbita.</p>
+                        </div>
+                        <img src="Imagenes/saturno.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>URANO</h1>
+                            <div class="linea"></div>
+                            <p>Es el séptimo planeta desde el Sol y el tercer gigante helado más grande del sistema solar. Está compuesto principalmente por agua, amoníaco y metano congelados sobre un núcleo rocoso. Su atmósfera de hidrógeno, helio y metano le da su característico color cian.</p>
+                        </div>
+                        <img src="Imagenes/urano.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>NEPTUNO</h1>
+                            <div class="linea"></div>
+                            <p>Es el octavo y más lejano planeta del sistema solar. Es un gigante de hielo y gas que destaca por su intenso color azul, provocado por el metano en su atmósfera, y por tener los vientos más rápidos del sistema, superando los 2000 km/h.</p>
+                        </div>
+                        <img src="Imagenes/neptuno.png" class="earth">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="contenido">
+                            <h4>PLANETA</h4>
+                            <h1>JUPITER</h1>
+                            <div class="linea"></div>
+                            <p>Es el quinto planeta desde el Sol y el más grande del sistema solar. Es un gigante gaseoso compuesto principalmente de hidrógeno y helio sin superficie sólida. Su masa equivale a 2,5 veces la de todos los demás planetas juntos, tarda 12 años en dar una vuelta al Sol, y posee al menos 95 lunas reconocidas.</p>
+                        </div>
+                        <img src="Imagenes/jupiter.png" class="earth">
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </section>
+
+        <!-- ================ ASTRONAUTAS ================= -->
+        <section id="astronautas" class="astronautas">
+            <h2>ASTRONAUTAS Y EXPLORADORES</h2>
+            <p>Conocé a las personas que hicieron posible llegar tan lejos.</p>
+            <div class="slider-astronautas">
+
+                <div class="track-astronautas fila1">
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro2.png">
+                        <div class="info-astronauta">
+                            <h3>Janet Kavandi</h3>
+                            <p>Voló en tres misiones del Transbordador Espacial, acumulando más de 33 días en el espacio.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro3.png">
+                        <div class="info-astronauta">
+                            <h3>Steve Lindsey</h3>
+                            <p>Fue comandante de cinco misiones del Transbordador Espacial, participando en el ensamblaje y abastecimiento de la Estación Espacial Internacional.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro4.png">
+                        <div class="info-astronauta">
+                            <h3>David Brown</h3>
+                            <p>Formó parte de la misión STS-107 del Columbia, donde realizó experimentos científicos en microgravedad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro5.png">
+                        <div class="info-astronauta">
+                            <h3>Charlie Camarda</h3>
+                            <p>Voló en la misión STS-114, el primer vuelo del Transbordador tras el accidente del Columbia, ayudando a probar nuevas medidas de seguridad.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro6.png">
+                        <div class="info-astronauta">
+                            <h3>Eileen Collins</h3>
+                            <p>Hizo historia al convertirse en la primera mujer en comandar una misión del Transbordador Espacial.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro7.png">
+                        <div class="info-astronauta">
+                            <h3>Nancy Currie</h3>
+                            <p>Participó en cuatro misiones espaciales y fue especialista en operaciones con el brazo robótico del transbordador.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro8.png">
+                        <div class="info-astronauta">
+                            <h3>Ilan Ramon</h3>
+                            <p>Fue el primer astronauta de Israel y viajó en la misión STS-107 del Columbia realizando experimentos científicos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro1.png">
+                        <div class="info-astronauta">
+                            <h3>Lisa Nowak</h3>
+                            <p>Voló en la misión STS-121 hacia la Estación Espacial Internacional, participando en tareas de logística y mantenimiento.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro2.png">
+                        <div class="info-astronauta">
+                            <h3>Janet Kavandi</h3>
+                            <p>Voló en tres misiones del Transbordador Espacial, acumulando más de 33 días en el espacio y luego ocupó cargos de liderazgo en la NASA.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro3.png">
+                        <div class="info-astronauta">
+                            <h3>Steve Lindsey</h3>
+                            <p>Fue comandante de cinco misiones del Transbordador Espacial, participando en el ensamblaje y abastecimiento de la Estación Espacial Internacional.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-astronauta">
+                        <img src="Imagenes/astro4.png">
+                        <div class="info-astronauta">
+                            <h3>David Brown</h3>
+                            <p>Formó parte de la misión STS-107 del Columbia, donde realizó experimentos científicos en microgravedad.</p>
+                        </div>
+                    </div>
+ 
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================ FASES de la LUNA ================= -->
+        <section class="fases-luna" id="luna">
+
+            <div class="container">
+
+                <h2 class="titulo-luna">FASES DE LA LUNA</h2>
+                <p class="subtitulo-luna">
+                    Descubrí cómo cambia la Luna a lo largo del mes.
+                </p>
+
+                <div class="row justify-content-center text-center mt-5">
+                    <div class="col-md-2 fase active">
+                        <img src="Imagenes/L_Nueva.png" class="img-fluid">
+                        <p>Luna Nueva</p>
+                    </div>
+
+                    <div class="col-md-2 fase">
+                        <img src="Imagenes/L_Creciente.png" class="img-fluid">
+                        <p>Creciente</p>
+                    </div>
+
+                    <div class="col-md-2 fase">
+                        <img src="Imagenes/L_Menguante.png" class="img-fluid">
+                        <p>Cuarto</p>
+                    </div>
+
+                    <div class="col-md-2 fase">
+                        <img src="Imagenes/L_Cuarto.png" class="img-fluid">
+                        <p>Menguante</p>
+                    </div>
+
+                    <div class="col-md-2 fase">
+                        <img src="Imagenes/L_Llena.png" class="img-fluid">
+                        <p>Llena</p>
+                    </div>
+                </div>
+
+                <div class="card-luna">
+                    <h3>LUNA CUARTO</h3>
+                    <h5>DÍA 07 - 08</h5>
+                    <p>
+                        La Luna se observa completamente iluminada
+                        porque la Tierra se encuentra entre ella y el Sol.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================ MISIONES ================= -->
+        <section id="misiones" class="misiones">
+            <div class="container">
+
+                <div class="titulo-misiones">
+                    <h2>MISIONES ESPACIALES</h2>
+                    <p>LAS MISIONES MÁS IMPORTANTES DE LA HISTORIA.</p>
+                </div>
+
+                <div class="row gy-5">
+
+                    <div class="col-lg-6">
+                        <div class="card-mision">
+                            <img src="Imagenes/mision_4.png">
+                            <div class="contenido-mision">
+                                <h3>APOLO 11</h3>
+                                <p>
+                                    Año: 1969, Fue la primera misión espacial que logró llevar seres humanos a la Luna. Los astronautas caminaron sobre la superficie lunar y regresaron a la Tierra con éxito, marcando un antes y un después en la exploración espacial.
+                                </p>                    
+
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6">
+                        <div class="card-mision">                
+                            <img src="Imagenes/mision_3.png">                
+                            <div class="contenido-mision">                   
+                                <h3>VOYAGER</h3>                    
+                                <p>                        
+                                    Año: 1977, Las sondas Voyager 1 y Voyager 2 fueron enviadas para explorar los planetas gigantes del Sistema Solar. Hoy continúan viajando por el espacio interestelar, siendo los objetos creados por el ser humano que más lejos han llegado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6">            
+                        <div class="card-mision">
+                            <img src="Imagenes/mision_2.png">
+                            <div class="contenido-mision">                    
+                                <h3>HUBBLE</h3>
+                                <p>
+                                    Año: 1990, El telescopio espacial Hubble orbita la Tierra capturando imágenes de galaxias, nebulosas y otros objetos del universo con una calidad extraordinaria. Sus descubrimientos revolucionaron la astronomía moderna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6">                   
+                        <div class="card-mision">
+                            <img src="Imagenes/mision_1.png">
+                            <div class="contenido-mision">
+                                <h3>ARTEMIS</h3>        
+                                <p>                        
+                                    Inicio: 2022, Artemis es el programa actual de exploración lunar de la NASA. Su objetivo es llevar nuevamente astronautas a la Luna, incluyendo a la primera mujer y a la primera persona de color, además de preparar futuras misiones tripuladas a Marte.                   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= NOTICIAS ================= -->
+        <section class="container my-5">
+
+            <header class="border-bottom py-3 mb-4 text-center">
+                <h1 class="fw-bold">Ultimas Noticias</h1>
+            </header>
+
+            <div class="p-5 mb-4 bg-dark text-white rounded noticiaPrincipal">
+                <h2 class="display-5 fw-bold">Los astrónomos advierten:</h2>
+                <p class="lead">"La cantidad de satélites que orbitan la Tierra no ha dejado de crecer en los últimos años. Desde 2019, el número pasó de unos pocos miles a más de 14.000, impulsado principalmente por el despliegue de grandes constelaciones destinadas a mejorar las telecomunicaciones globales. Sin embargo, lo que hoy parece una expansión acelerada podría ser apenas el comienzo.
+                    Un nuevo estudio del Observatorio Europeo Austral (ESO), aceptado para su publicación en la revista Astronomy & Astrophysics, advierte que las propuestas actualmente sobre la mesa contemplan el lanzamiento de más de 1,7 millones de nuevos satélites".</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white border-light h-100 noticia1">
+                        <div class="card-body">
+                            <small class="text-primary fw-bold">Planetas</small>
+                            <h3>Un gigantesco "airbag" espacial de 400t</h3>
+                            <p>¿Por qué necesitamos un airbag espacial? Cuando el Sol experimenta eyecciones de masa coronal, arroja miles de millones de toneladas de plasma magnetizado al espacio. Si esa nube apunta hacia nosotros, choca contra el campo magnético de la Tierra provocando tormentas geomagnéticas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white border-light h-100 noticia2">
+                        <div class="card-body">
+                            <small class="text-success fw-bold">Misiones</small>
+                            <h3>Un astronauta que viajó a la Luna en Artemis II</h3>
+                            <p>Durante esa misión, la tripulación recorrió 1.100.000 kilómetros en casi 10 días a bordo de la nave Orion, llamada Integrity. Esa distancia, de acuerdo con los datos oficiales, superó la marca que había mantenido la tripulación del Apolo 13 y llevó a los astronautas más lejos en el espacio que cualquier ser humano hasta entonces.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--===================== FOOTER =====================-->
+        <footer class="footer">
+            <div class="footer-overlay">
+                <div class="container text-center">
+
+                    <div class="footer-contenido">
+                        <h2>Sobre COSMOEXPLORER</h2>
+                        <p>
+                            Plataforma educativa para explorar el
+                            universo, aprender y maravillarse con el cosmos.
+                        </p>
+
+                        <div class="footer-dots">
+                            <div class="redes">
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="copyright">
+                        © CosmoExplorer. Todos los derechos reservados.
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!--===================== BTN DATOS CURIOSOS =====================-->
+        <button class="btn-dato-flotante" id="abrirDato">
+            ✦ Dato curioso
+        </button>
+        <div class="modal-dato" id="modalDato">
+            <div class="dato-box">
+                
+                <button class="cerrar-dato" id="cerrarDato">×</button>
+                
+                <div class="dato-texto">
+                    <h2>DATOS CURIOSOS</h2>
+                    <div class="linea"></div>
+                    <h3>Sabías que...</h3>
+                    <p id="textoDato">
+                        En Saturno puede llover hielo en lugar de agua.
+                    </p>
+                    <button class="btn-otro-dato" id="otroDato">
+                        ⟳ OTRO DATO
+                    </button>
+                </div>
+
+                <div class="dato-imagen">
+                    <img id="imagenDato" src="Imagenes/1dato.jpg" alt="Dato curioso">
+                </div>
+
+            </div>
+        </div>
+
+    
+        
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="java1.js"></script>
+
+        <script src="java2.js"></script>
+
+        <script>
+    
+        const slidesHero = [
+        { 
+            imagen:"Imagenes/img1.jpg",
+            titulo:"Bienvenido a casa, Terrícola.",   
+            extra:"",
+            posicion:"center 80%"
+        },
+
+        {
+            imagen:"Imagenes/img3.png",
+            titulo:"COSMOEXPLORER",
+            extra:"Descubrí el universo de una forma simple e interactiva<br>Aprendé sobre los planetas, las estrellas, las galaxias y las misiones.",
+            boton:"COMENZAR EXPLORACIÓN",
+            posicion:"center center"
+        },
+
+        ];
+
+        let slideActual = 0;
+
+        const heroSlider = document.getElementById("heroSlider");
+        const heroTitulo = document.getElementById("heroTitulo");
+        const heroTextoExtra = document.getElementById("heroTextoExtra");
+        const heroDots = document.querySelectorAll("#heroDots span");
+        const heroContenido = document.querySelector(".hero-contenido");
+    
+        function mostrarSlideHero(){
+    
+            const slide = slidesHero[slideActual];
+
+            heroContenido.classList.add("hero-fade");
+    
+            setTimeout(() => {
+
+                heroSlider.style.backgroundImage = `url('${slide.imagen}')`;
+                heroSlider.style.backgroundPosition = slide.posicion;
+    
+                heroTitulo.innerHTML = slide.titulo;
+                heroTextoExtra.innerHTML = slide.extra;
+                heroBtn.innerHTML = slide.boton;
+
+             
+                if (slideActual === 0) {
+
+                    heroBtn.style.visibility = "hidden";
+                    heroBtn.style.border = "none";
+                    heroBtn.style.padding = "0";   
+                    heroBtn.style.height = "0";
+
+                } else {
+
+                    heroBtn.style.visibility = "visible";
+                    heroBtn.style.border = "2px solid white";
+                    heroBtn.style.padding = "15px 40px";
+                    heroBtn.style.height = "auto";
+
+                    heroBtn.innerHTML = slide.boton;
+
+                }
+
+
+                heroDots.forEach(dot => dot.classList.remove("activo"));    
+                heroDots[slideActual].classList.add("activo");
+    
+                heroContenido.classList.remove("hero-fade");
+
+            }, 250);
+
+        }
+        
+        document.getElementById("heroNext").addEventListener("click", () => {
+        
+            slideActual++;
+        
+            if(slideActual >= slidesHero.length){
+                slideActual = 0;
+            }
+        
+            mostrarSlideHero();
+
+        });
+    
+        document.getElementById("heroPrev").addEventListener("click", () => {
+    
+            slideActual--;
+    
+            if(slideActual < 0){
+                slideActual = slidesHero.length - 1;
+            }
+    
+            mostrarSlideHero();
+        });
+        </script>
+
+    </body>
+    
+</html>

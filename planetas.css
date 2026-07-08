@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.hero-planeta {
+  min-height: 100vh;
+  background-image: url("Imagenes/img3.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.contenido {
+  text-align: center;
+  margin-top: 90px;
+  position: relative;
+  z-index: 3;
+}
+.contenido h4 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.contenido h1 {
+  font-size: 95px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.linea {
+  width: 80px;
+  height: 5px;
+  background-color: #7ee7e5;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.contenido p {
+  width: 50%;
+  margin: 0 auto 60px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.btn-principal {
+  padding: 18px 45px;
+  border-radius: 40px;
+  border: none;
+  background-color: #e9f4ff;
+  font-weight: bold;
+  box-shadow: 0 0 25px #b9dcff;
+}
+.venus {
+  position: absolute;
+  width: 180px;
+  left: -80px;
+  top: 360px;
+}
+.mars {
+  position: absolute;
+  width: 170px;
+  right: -50px;
+  top: 350px;
+}
+.venus-texto {
+  position: absolute;
+  left: 90px;
+  top: 410px;
+  font-size: 24px;
+}
+.mars-texto {
+  position: absolute;
+  right: 90px;
+  top: 410px;
+  font-size: 24px;
+}
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.earth {
+  position: absolute;
+  width: 650px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: rotar 70s linear infinite;
+}
+
+
+@keyframes rotar {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+
+
